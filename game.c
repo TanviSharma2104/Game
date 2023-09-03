@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+#include<stdlib.h>
 
 char matrix[10]={'0','1','2','3','4','5','6','7','8','9'};
 
@@ -33,6 +34,7 @@ int main(){
 		else {
 			printf("Invalid move");
 			player--;
+			getch();
 
 		}
 		i=gameStatus();
@@ -44,7 +46,7 @@ int main(){
 
 	if(i==1)printf("==> Player %d win ",--player);
 	else printf("==> Game Draw");
-
+	getch();
 	return 0;
 }
 
@@ -70,6 +72,7 @@ int gameStatus(){
 
 }
 void printMatrix(){
+	system("cls");
 	printf("\n\n\t Tic Tac Toe \n\n");
 	printf("Player 1 --> X  Player 2 --> O \n\n");
 

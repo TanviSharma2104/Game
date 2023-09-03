@@ -48,7 +48,10 @@ int main(){
 	if(i==1)printf("==> Player %d win ",--player);
 	else printf("==> Game Draw");
 	getch();
+<<<<<<< HEAD
 
+=======
+>>>>>>> f65a9afb889757e96c3160bbd3847cfc3849bb68
 	return 0;
 }
 

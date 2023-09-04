@@ -16,8 +16,9 @@ int main(){
 		player=(player%2!=0)?1:2;
 		printf("Player %d , Enter a number to mark your turn: ",player);
 		scanf("%d",&choice);
-
+		
 		symbol=(player==1)?'X':'O';
+
 
 		if(choice==1 && matrix[1]=='1'){
 			matrix[1]=symbol;
@@ -48,10 +49,6 @@ int main(){
 	if(i==1)printf("==> Player %d win ",--player);
 	else printf("==> Game Draw");
 	getch();
-<<<<<<< HEAD
-
-=======
->>>>>>> f65a9afb889757e96c3160bbd3847cfc3849bb68
 	return 0;
 }
 
